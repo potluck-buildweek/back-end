@@ -6,12 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "ketchup": "git fetch && git reset --hard origin/lecture",
-    "up": "knex migrate:up",
-    "down": "knex migrate:down",
-    "latest": "knex migrate:latest",
+    "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
-    "mignumber": "knex migrate:currentVersion",
     "seed": "npx knex seed:run"
   },
   "repository": {
